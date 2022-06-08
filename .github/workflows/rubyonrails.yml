@@ -27,5 +27,5 @@ jobs:
         with:
           bundler-cache: true
       # Add or replace test runners here
-      - name: Run tests
-        run: bin/rake
+      - name: Run ruby test
+        run: cd /home/runner/work/testA/testA && rspec
