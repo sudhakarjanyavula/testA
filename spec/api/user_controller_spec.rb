@@ -4,10 +4,6 @@ RSpec.describe Api::UserController do
 	let(:params)  { { :user => { :firstName => "sudhakar", :lastName => "janyavula", 
 		:email => "sudhakar@gmail.com" } } }
     describe 'POST #create' do    	
-    	# before do
-    	# #binding.pry	
-    	# 	post :create, params: params
-    	# end
     	context 'when params are correct' do
 	    it 'is expected to create user successfully' do
 	    	post '/api/user/', params: params    	
