@@ -18,6 +18,8 @@ jobs:
         image: postgres:11-alpine
         ports:
           - "5432:5432"
+    env:
+      RAILS_ENV: test
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
